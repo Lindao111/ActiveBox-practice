@@ -477,13 +477,34 @@ margin-top: 30px;
 
     .nav{
         display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #292d48;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 100%;
     }
+    .nav.show {
+        display: flex;
+        
+        text-align: center;
+    }
+    .nav.show .nav__link{
+        margin: 0;
+    }
+
+    .nav__link{
+        padding: 9px 15px;
+    }
+
     .burger{
         display: block;
         background: none;
         border: 0;
         cursor: pointer;
         padding: 9px 2px;
+        
 
     }
     .burger__item{
