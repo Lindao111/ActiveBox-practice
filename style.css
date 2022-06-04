@@ -334,12 +334,22 @@ display: flex;
 .reviews__item{
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .reviews__photo{
     width: 50%;
     height: 500px;
     position: relative;
 }
+.reviews__slider{
+    height: 500px;
+    overflow: hidden;
+}
+
+.reviews__slider.slick-initialized{
+    height: auto;
+}
+
 .reviews__img{
 position: absolute;
 top: 50%;
@@ -373,6 +383,50 @@ text-transform: uppercase;
 color: #ffffff;
 margin-top: 30px;
 }
+
+
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+    width: 50%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.slick-dots li{
+    margin: 0 5px;
+}
+
+.slick-dots button{
+    width: 15px;
+    height: 15px;
+
+    background: #fff;
+    border-radius: 50%;
+    border: 0;
+    opacity: 0.5;
+    padding: 0;
+    cursor: pointer;
+
+    font-size: 0;
+    color: transparent;
+}
+
+.slick-dots button:focus{
+    outline: 0;
+}
+
+.slick-dots .slick-active button{
+    opacity: 1;
+}
+
 
 /* Download===================== */
 .download{
@@ -566,11 +620,14 @@ margin-top: 30px;
         justify-content: center;
     }
 /* reviews======================== */
+    
     .reviews__photo{
         width: 100%;
         overflow: hidden;
         margin: 15px 0 40px;
     }
+  
+
     .reviews__content{
         width: 100%;
         padding-left: 0;
@@ -625,6 +682,7 @@ margin-top: 30px;
         
 /* reviews======================== */
 
+
         .reviews__text{
             font-size: 25px;
         }
@@ -664,7 +722,7 @@ margin-top: 30px;
 
             /* Reviews============== */
             .reviews__img{
-                right: -150px;
+                right: -105px;
             }
 
 }

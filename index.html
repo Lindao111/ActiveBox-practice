@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -306,6 +307,8 @@
 <div class="reviews" id="Reviews">
     <div class="container">
 
+        <div class="reviews__slider" id="reviewsSlider">
+            <div class="slick-item">
         <div class="reviews__item">
             <div class="reviews__photo">
                 <img class="reviews__img" src="reviews/reviews_1.jpg" alt="">
@@ -321,6 +324,25 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="slick-item">
+        <div class="reviews__item">
+            <div class="reviews__photo">
+                <img class="reviews__img " src="reviews/reviews_1.jpg" alt="">
+            </div>
+            <div class="reviews__content">
+                <div class="reviews__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, corporis.
+                </div>
+                <div class="reviews__author">
+                    Susan Sims, Interaction Designer at XYZ
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
         
     </div>
 </div>
@@ -395,6 +417,7 @@
     </div>
 </footer>
 <!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

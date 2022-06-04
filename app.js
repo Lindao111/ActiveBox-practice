@@ -31,7 +31,8 @@ $(function(){
         let elementid = $(this).data("scroll");
         let elementOffset = $(elementid).offset().top;
 
-        console.log(elementOffset);
+        nav.removeClass("show")
+        // console.log(elementOffset);
 
         $("html, body").animate({
             scrollTop: elementOffset - 70
@@ -49,5 +50,16 @@ $(function(){
         nav.toggleClass("show");
     });
 
+    // reviewsSlider: https://kenwheeler.github.io/slick/ *slick library*
+    let slider =$("#reviewsSlider");
+
+    slider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade:true,
+        arrows:false,
+        dots:true,
+        });
 
 });
