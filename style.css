@@ -607,7 +607,7 @@ margin-top: 30px;
         width: 50%;
     }
 /* team==================== */
-    .team{}
+    
     .team__item{
         width: 50%;
         text-align: center;
@@ -724,5 +724,5 @@ margin-top: 30px;
             .reviews__img{
                 right: -105px;
             }
-        }
+        }}
 /*  */
